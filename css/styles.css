@@ -141,12 +141,29 @@ body {
 			}
 
 /* TWEET */
+
 .tweet {
 	clear: both;
 	padding: 9px 12px;
 	border-bottom: 1px solid #e8e8e8;
 	min-height: 60px;
 	border-radius: 6px;
+}
+
+.tweet:hover .tweet-actions{
+	display:block;
+	opacity: 1.0;
+	color: #2FC2EF;
+
+}
+
+.tweet:hover .tweet-actions li{
+	color: #2FC2EF;
+}
+
+.tweet:hover .icon {
+	color: #2FC2EF;
+	background-color: #2FC2EF;
 }
 
 	.tweet .avatar {
@@ -169,6 +186,10 @@ body {
 
 	.tweet-actions {
 		text-align: right;
+		/*display:none;*/
+		opacity: 0.2;
+		color: #999;
+
 	}
 		.tweet-actions ul {
 			list-style-type: none;
@@ -176,14 +197,14 @@ body {
 			.tweet-actions li {
 				display: inline-block;
 				font-size: 12px;
-				color: #2FC2EF;
+				color: #999;
 				cursor: pointer;
 				margin-right: 2px;
 			}
 
 	.icon {
-		color: #2FC2EF;
-		background-color: #2FC2EF;
+		color: #999;
+		background-color: #999;
 		width: 12px;
 		height: 13px;
 		display: inline-block;
@@ -212,6 +233,7 @@ body {
 	.stats {
 		margin: 12px 0 12px 42px;
 		border-top: 1px solid #e8e8e8;
+		display: none;
 	}
 		.stats, .stats div {
 			box-sizing: border-box;
@@ -253,6 +275,7 @@ body {
 			position: relative;
 			clear: both;
 			padding-left: 43px;
+			display:none;
 		}
 			.reply .avatar {
 				position: absolute;

@@ -7,6 +7,7 @@
 		<link rel="stylesheet" href="css/styles.css" type="text/css" />
 		<script type"text/javascript" src="./js/jQuery-2.0.3.min.js"></script>
 		<script type="text/javascript" src="./js/myscript.js"></script>
+		<script type="text/javascript" src="./js/moment.js" ></script>
 	</head>
 	<body>
 		<div id="page-container">
@@ -14,7 +15,7 @@
 				<div id="profile-summary">
 					<div class="content">
 						<img class='avatar' src='img/alagoon.jpg' />
-						<p>Your Name Here</p>
+						<p>Chase Butterfield</p>
 					</div>
 				</div>
 				<div id="tweet-content">
@@ -88,7 +89,7 @@
 								<!-- BLACK DIAMOND: Make the timestamp below similar to how they look on Twitter (1h, 18m, 1m) and use the jQuery timeago plugin to make them automatic. -->
 								<!-- HINT: Refer to timeago documentation -->
 								<div class="time">
-									1:04 PM - 19 Sep 13
+									<span id="date"></span>
 								</div>
 							</div>
 							<div class="reply">
